@@ -1,0 +1,367 @@
+
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '국립박물관문화재단클래식L';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '국립박물관문화재단클래식M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SunBatang-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SunBatang-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+*{
+    margin: 0px;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+body{display: flex; justify-content: center; width: 100%; overflow-x: hidden;}
+/*
+body{display: flex; justify-content: center; width: 100%; overflow-x: hidden; transform: scale(80%); transform-origin: 50% 0%;}
+*/
+header{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+
+#maincontainer{
+    width: 1320px;
+    margin: auto;
+}
+
+
+#title{
+    width:150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#menu{
+    width: 100%;
+    height: 70px;
+    
+    
+    display: flex;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    padding: 2rem;
+    color: rgb(77, 30, 17);
+    background: rgb(219, 179, 134);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+ul{display: flex;
+    justify-content: space-between;
+    width: 860px;}
+
+li{list-style: none;}
+
+.row{
+    position: relative;
+    display: flex;
+    width: 1320px;
+
+}
+
+
+#slider{
+    display: flex;
+    justify-content: center;
+}
+
+#imgeContainer{
+    width: 860px;
+    height: 393px;
+    display: flex;
+    overflow: hidden;
+}
+
+#imageSlider{
+    width: 1720px;
+    display: flex;
+    transition: transform 0.5s;
+}
+
+#interface{
+    width: 860px;
+    height: 393px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+#leftArrow{
+    position: absolute ;
+    left: 20px;
+    top: 180px;
+    
+}
+#rightArrow{
+    position: absolute;
+    right: 20px;
+    top: 180px;
+    transform: scaleX(-1);
+}
+
+#bottomBtn{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+
+
+.bg-br{background-color: rgb(77, 30, 17);}
+.bg-br1{background-color: rgb(63 29 20);}
+
+.col-1{ width: 90px; margin: 0px 10px;}
+.col-2{ width: 200px; margin: 0px 10px; }
+.col-3{ width: 310px; margin: 0px 10px; }
+.col-4{ width: 420px; margin: 0px 10px; }
+.col-5{ width: 530px; margin: 0px 10px;}
+.col-6{ width: 640px; margin: 0px 10px; }
+.col-7{ width: 750px; margin: 0px 10px; }
+.col-8{ width: 860px; margin: 0px 10px;}
+.col-9{ width: 970px; margin: 0px 10px; }
+.col-10{ width: 1080px; margin: 0px 10px;}
+.col-11{ width: 1190px; margin: 0px 10px;}
+.col-12{ width: 1300px; margin: 0px 10px;}
+
+
+/*
+.col-1{ width: 72px; margin: 0px 10px; background-color: aqua; }
+.col-2{ width: 160px; margin: 0px 10px; background-color: aqua; }
+.col-3{ width: 248px; margin: 0px 10px; background-color: aqua;}
+.col-4{ width: 336px; margin: 0px 10px; background-color: aqua; }
+.col-5{ width: 424px; margin: 0px 10px;background-color: aqua;}
+.col-6{ width: 512px; margin: 0px 10px; background-color: aqua;}
+.col-7{ width: 600px; margin: 0px 10px;background-color: aqua;}
+.col-8{ width: 688px; margin: 0px 10px;background-color: aqua;}
+.col-9{ width: 776px; margin: 0px 10px;background-color: aqua; }
+.col-10{ width: 864px; margin: 0px 10px; background-color: aqua;}
+.col-11{ width: 952px; margin: 0px 10px; background-color: aqua;}
+.col-12{ width: 1040px; margin: 0px 10px;background-color: aqua;}
+*/
+
+
+
+.h-2{height: 2px;}
+.h-5{height: 5px;}
+.h-10{height: 10px;}
+.h-15{height: 15px;}
+.h-20{height: 20px;}
+.h-26{height: 26px;}
+.h-35{height: 35px;}
+.h-36{height: 36px;}
+.h-40{height: 40px;}
+.h-45{height: 49px;}
+.h-50{height: 50px;}
+.h-60{height: 60px;}
+.h-70{height: 75px;}
+.h-82{height: 82px;}
+.h-90{height: 90px;}
+.h-95{height: 95px;}
+.h-100{height: 100px;}
+.h-110{height: 110px;}
+.h-120{height: 120px;}
+.h-125{height: 125px;}
+.h-128{height: 128px;}
+.h-130{height: 130px;}
+.h-140{height: 140px;}
+.h-145{height: 145px;}
+.h-150{height: 150px;}
+.h-170{height: 170px;}
+.h-175{height: 175px;}
+.h-185{height: 185px;}
+.h-200{height: 200px;}
+.h-205{height: 205px;}
+.h-220{height: 220px;}
+.h-237{height: 237px;}
+.h-249{height: 249px;}
+.h-250{height: 250px;}
+.h-268{height: 268px;}
+.h-275{height: 275px;}
+.h-292{height: 292px;}
+.h-300{height: 300px;}
+.h-400{height: 400px;}
+
+
+
+a{
+    text-decoration: none;
+}
+
+button{
+    width: 90px;
+    border-radius: 10px;
+    border: 1;
+    outline: 1;
+    border-color: rgb(77, 30, 17);
+    background-color: rgba(255, 255, 255, 0);
+
+}
+.btn-1:hover{
+    width: 90px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.btn-2:hover{
+    color: rgb(161, 94, 38);
+}
+
+
+
+
+.vl {
+    border-left: 3px solid rgb(107, 38, 19);
+    border-right: 3px solid rgb(107, 38, 19);
+    border-bottom: 2px solid rgb(107, 38, 19);
+    height: 1470px;
+}
+
+.vl-1 {
+    border-left: 3px solid rgb(107, 38, 19);
+    border-right: 3px solid rgb(107, 38, 19);
+    border-bottom: 2px solid rgb(107, 38, 19);
+    height: 1560px;
+}
+
+.vl-2 {
+    border-left: 3px solid rgb(107, 38, 19);
+    border-right: 3px solid rgb(107, 38, 19);
+    border-bottom: 2px solid rgb(107, 38, 19);
+    height: 3430px;
+}
+
+.vl-3 {
+    border-left: 3px solid rgb(107, 38, 19);
+    border-right: 3px solid rgb(107, 38, 19);
+    border-bottom: 2px solid rgb(107, 38, 19);
+    height: 2800px;
+}
+
+.vl-4 {
+    border-left: 3px solid rgb(107, 38, 19);
+    border-right: 3px solid rgb(107, 38, 19);
+    border-bottom: 2px solid rgb(107, 38, 19);
+    height: 4500px;
+}
+
+.vl2 {
+    border-top: 2px rgb(107, 38, 19);
+}
+
+
+
+
+
+.text-title{font-size: 3rem; font-weight: normal;font-style: normal;}
+.text-title1{font-size: 4.8rem; font-weight: normal;font-style: normal;}
+.text-title1-1{font-size: 4.5rem; font-weight: normal;font-style: normal;}
+.text-title2{font-size: 1.6rem; font-weight: normal;font-style: normal;}
+.text-title3{font-size: 1.8rem; font-weight: normal;font-style: normal;}
+.text-title4{font-size: 5.6rem; font-weight: normal;font-style: normal;}
+
+.text-normal1{font-size: 1.4rem; font-weight: normal;font-style: normal;}
+.text-normal01{font-size: 1.1rem; font-weight: normal;font-style: normal;}
+.text-normal{font-size: 2rem; font-weight: normal;font-style: normal;}
+.text-normal-1{font-size: 1.6rem; font-weight: normal;font-style: normal;}
+.text-normal-2{font-size: 1.8rem;font-weight: normal; font-style: normal;}
+.text-normal-3{font-size: 1.7rem;font-weight: normal; font-style: normal;}
+
+.text-menu{font-size: 1.8rem; font-weight: 300;}
+.text-small{font-size: 1.2rem; font-weight: 300;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-justify{text-align: justify;}
+
+.text-kr1{ font-family: 'SunBatang-Light';}
+.text-kr1-1{font-family: 'SunBatang-Medium';}
+.text-kr1-2{font-family: 'SunBatang-Bold';}
+
+.text-kr2{ font-family: '국립박물관문화재단클래식B';}
+.text-kr3{ font-family: '국립박물관문화재단클래식M';}
+.text-kr4{ font-family: '국립박물관문화재단클래식L';}
+
+.text-sl{ writing-mode: tb-rl;}
+
+.text-brown{color:rgb(77, 30, 17);}
+.text-brown2{color:rgb(161, 94, 38);}
+.text-wheat{color: wheat;}
+
+
+/*행간*/
+.line-height0{line-height: 145%;}
+.line-height{line-height: 150%;}
+.line-height00{line-height: 160%;}
+.line-height1{line-height: 300%;}
+.line-heigt1-1{line-height: 120%;}
+.line-height1-2{line-height: 200%;}
+.line-height2{line-height: 400%;}
+
+/*자간*/
+
+.p01{letter-spacing:-1.1px;}
+.p02{letter-spacing:-1.6px;}
+
+.image-fit{width: 100%;}
+.image-fit1{width: 70%;}
+.image-fit2{width: 50%;}
+.image-fit3{width: 130%;}
+.image-fit4{width: 1%;}
+.image-fit5{width: 85%;}
+.image-fit6{width: 90%;}
+
+
